@@ -1,0 +1,29 @@
+.loader-container {
+    position: fixed;
+    background-color: rgba(255, 225, 255, 0.5);
+    height: 100%;
+    z-index: 999;
+    width: 100%;
+    background: transparent; /* Gradient background */
+    top:40%;
+    left:50%;
+}
+
+.loader {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top: 3px solid #ffffff; /* Main loader color */
+    border-right: 3px solid #d4d4d4; /* Secondary color for a smoother effect */
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
